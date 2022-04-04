@@ -13,5 +13,6 @@ namespace GenericRepositoryTest.Repositories
         Task<IEnumerable<T>> FindAll();
         Task<IEnumerable<T>> FindAll(Expression<Func<T, bool>> predicate);
         Task<T> Update(T entity);
+        Task<bool> Delete(int id);
     }
 }

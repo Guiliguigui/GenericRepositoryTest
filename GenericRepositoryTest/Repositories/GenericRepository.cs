@@ -65,5 +65,12 @@ namespace GenericRepositoryTest.Repositories
             await _db.SaveChangesAsync();
             return await _db.Set<TEntity>().FindAsync(typeEntity.GetProperty("Id").GetValue(entity));
         }
+
+        public async Task<bool> Delete(int id)
+        {
+            TEntity entity = await _db.Set<TEntity>().FindAsync(id);
+            _db.Set<TEntity>().Remove(entity);
+            return await _db.SaveChangesAsync() == 1;
+        }
     }
 }

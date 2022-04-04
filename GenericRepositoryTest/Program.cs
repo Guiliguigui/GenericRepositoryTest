@@ -42,6 +42,8 @@ namespace GenericRepositoryTest
             Console.WriteLine($"Find with predicate on FirstName :\n{await studentRepository.Find(e => e.Firstname == "Pierre")}");
             Console.WriteLine($"FindAll with predicate on FirstName :\n[\n\t{string.Join(",\n\t", (await studentRepository.FindAll(e => e.Firstname == "Guillaume")))}\n]");
 
+
+            Console.WriteLine($"Delete with student's Id :\n{await studentRepository.Delete(createdStudent.Id)}");
         }
     }
 }
