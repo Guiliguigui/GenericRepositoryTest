@@ -1,4 +1,4 @@
-﻿using ExempleEFCore.Models;
+﻿using GenericRepositoryTest.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExempleEFCore.Data
+namespace GenericRepositoryTest.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -18,7 +18,7 @@ namespace ExempleEFCore.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source = (LocalDB)\EntityBDD;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source = np:\\.\pipe\LOCALDB#363A1ABA\tsql\query;Integrated Security=True");
         }
 
         DbSet<Student> Students { get; set; }

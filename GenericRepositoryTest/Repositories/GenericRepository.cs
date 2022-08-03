@@ -1,4 +1,4 @@
-﻿using ExempleEFCore.Data;
+﻿using GenericRepositoryTest.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

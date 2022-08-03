@@ -1,5 +1,5 @@
-﻿using ExempleEFCore.Data;
-using ExempleEFCore.Models;
+﻿using GenericRepositoryTest.Data;
+using GenericRepositoryTest.Models;
 using GenericRepositoryTest.Repositories;
 using System;
 using System.Linq;

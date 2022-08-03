@@ -1,4 +1,4 @@
-﻿using ExempleEFCore.Data;
+﻿using GenericRepositoryTest.Data;
 
 namespace GenericRepositoryTest.Repositories
 {
